@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long int n;
+    cout<<"Enter any Number: ";
+    cin>>n;
+    int count = 0;
+    int a = n;
+    while(n!=0)
+    {   
+        n/=10;
+        count++;
+    }
+    if(a==0) cout<<1;
+    else cout<<count;
+}
